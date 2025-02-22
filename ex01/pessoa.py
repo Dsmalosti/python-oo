@@ -43,3 +43,7 @@ class Pessoa:
 
         print(f'{self.nome} está parando de comer.')
         self.comendo = False
+
+    @classmethod
+    def bebendo(cls, nome, bebida):
+        print(f'{nome} não esta comendo nem falando, esta bebendo {bebida}')
