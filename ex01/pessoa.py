@@ -1,3 +1,5 @@
+from random import randint
+
 class Pessoa:
     def __init__(self, nome, idade, comendo=False, falando=False):
         self.nome = nome
@@ -43,6 +45,11 @@ class Pessoa:
 
         print(f'{self.nome} está parando de comer.')
         self.comendo = False
+
+    @staticmethod
+    def rand_id():
+        rand = randint(10000, 19999)
+        return rand
 
     @classmethod
     def bebendo(cls, nome, bebida):
